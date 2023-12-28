@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap");
+
+body {
+  background-color: var(--yellow);
+  font-family: var(--font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#blog__preview__card {
+  background-color: var(--white);
+  border-radius: 20px;
+  border: 1px solid var(--black);
+  box-shadow: 10px 10px var(--black);
+  padding: 20px;
+}
+
+img {
+  display: block;
+}
+
+.category {
+  display: inline-block;
+  background-color: var(--yellow);
+  margin-top: 25px;
+  font-weight: var(--bold-weight);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.blog__title {
+  transition: color 0.1s, cursor 0.1s;
+}
+
+.blog__title:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+.publish__date {
+  color: var(--gray);
+}
+
+.blog__description {
+  color: var(--gray);
+  width: 320px;
+}
+
+.author__info {
+  display: flex;
+  align-items: center;
+}
+
+.author__avatar {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.author__name {
+  font-weight: var(--bold-weight);
+}
+
+:root {
+  /* Primary Colors */
+  --yellow: hsl(47, 88%, 63%);
+
+  /* Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --gray: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+
+  /* Fonts */
+  --font: Figtree;
+  --regular-weight: 600;
+  --bold-weight: 800;
+}
