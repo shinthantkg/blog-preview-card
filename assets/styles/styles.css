@@ -18,8 +18,9 @@ body {
   padding: 20px;
 }
 
-img {
+.blog__illustration {
   display: block;
+  border-radius: 10px;
 }
 
 .category {
